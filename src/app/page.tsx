@@ -70,7 +70,7 @@ export default function Home() {
           </button>
           
           {/* EU Funding Section */}
-          <div className="mt-12 px-4">
+          {/* <div className="mt-12 px-4">
             <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 opacity-80 max-w-6xl mx-auto">
               <div className="flex-shrink-0">
                 <Image 
@@ -100,7 +100,7 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -241,7 +241,7 @@ export default function Home() {
       </section>
 
       {/* Partners Section */}
-      <section className="py-24">
+      {/* <section className="py-24">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-16">Our Partners & Supporters</h2>
           <div className="flex justify-center">
@@ -250,7 +250,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="py-16 border-t border-gray-800">
