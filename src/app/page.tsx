@@ -39,6 +39,7 @@ export default function Home() {
           <nav className="hidden md:flex space-x-8">
             <Link href="#home" className="text-gray-300 hover:text-white transition-colors">Home</Link>
             <Link href="#about" className="text-gray-300 hover:text-white transition-colors">About</Link>
+            <Link href="#vision-mission" className="text-gray-300 hover:text-white transition-colors">Vision</Link>
             <Link href="#how-it-works" className="text-gray-300 hover:text-white transition-colors">How It Works</Link>
             <Link href="#roadmap" className="text-gray-300 hover:text-white transition-colors">Roadmap</Link>
             <Link href="#news" className="text-gray-300 hover:text-white transition-colors">News</Link>
@@ -125,6 +126,129 @@ export default function Home() {
               <p className="text-gray-300 leading-relaxed">
                 A transparent platform that enables data providers to monetize their assets securely, and allows AI developers to access high-quality data.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision & Mission Section */}
+      <section id="vision-mission" className="py-24 bg-gradient-to-b from-gray-900/30 to-transparent">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            {/* Vision */}
+            <div className="mb-20">
+              <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">Vision of Pactus Nexus</h2>
+              <div className="bg-gray-900/50 border border-gray-700 rounded-xl p-8 backdrop-blur-sm">
+                <p className="text-lg text-gray-300 leading-relaxed text-center">
+                  At Pactus Nexus, we aim to create a pioneering blockchain project that is democratically governed, energy-efficient, and aligned with the principles of Industry 5.0. Our goal is to shape a future where project management is transparent, inclusive, and driven by the collective wisdom of our developers and community. By focusing on sustainability and autonomy, we strive to build a platform that not only advances technological innovation but also upholds values of fairness and collaboration.
+                </p>
+              </div>
+            </div>
+
+            {/* Mission */}
+            <div className="mb-20">
+              <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">Mission of Pactus Nexus</h2>
+              <div className="bg-gray-900/50 border border-gray-700 rounded-xl p-8 backdrop-blur-sm mb-8">
+                <p className="text-lg text-gray-300 leading-relaxed mb-6 text-center">
+                  The mission of Pactus Nexus is to establish a blockchain ecosystem that reflects the efforts and aspirations of our development team and community. We are committed to:
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                    <p className="text-gray-300 leading-relaxed">
+                      Implementing a foundation-led governance model that ensures democratic and transparent decision-making.
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                    <p className="text-gray-300 leading-relaxed">
+                      Recognizing and valuing the contributions of all developers while safeguarding their rights and achievements.
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                    <p className="text-gray-300 leading-relaxed">
+                      Prioritizing energy efficiency to align with global sustainability goals and Industry 5.0 principles.
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                    <p className="text-gray-300 leading-relaxed">
+                      Creating an autonomous organization where decisions serve the best interests of the project and community, free from personal biases.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Statement */}
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-12">Statement on the Creation of a New  Energy Efficient Blockchain</h2>
+              <div className="bg-gray-900/50 border border-gray-700 rounded-xl p-8 backdrop-blur-sm">
+                <p className="text-lg text-gray-300 leading-relaxed mb-8 text-center">
+                  We, the Pactus development team, wish to inform the community and stakeholders about our decision to create a new energy efficient blockchain.
+                </p>
+                
+                <div className="grid lg:grid-cols-2 gap-8">
+                  {/* Reasons */}
+                  <div>
+                    <h3 className="text-2xl font-semibold text-white mb-6 text-center">Reasons for Creating the New  Energy Efficient Blockchain</h3>
+                    <div className="space-y-6">
+                      <div className="border-l-4 border-red-500 pl-6">
+                        <h4 className="text-lg font-medium text-white mb-2">Maintenance Issues</h4>
+                        <p className="text-gray-300 leading-relaxed">
+                          The original Pactus project faced ongoing maintenance problems that hindered its development and scalability. These issues made it difficult to continue the project in a way that met the community's needs.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-red-500 pl-6">
+                        <h4 className="text-lg font-medium text-white mb-2">Centralized Control</h4>
+                        <p className="text-gray-300 leading-relaxed">
+                          Key aspects of the project, such as tokenomics, social media, and the website, were managed by a single individual. This centralization led to decisions and communications that did not reflect the collective efforts and views of the entire team.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-red-500 pl-6">
+                        <h4 className="text-lg font-medium text-white mb-2">Lack of Democratic Governance</h4>
+                        <p className="text-gray-300 leading-relaxed">
+                          The absence of a transparent and democratic decision-making process prevented the project from evolving in a way that aligned with the team's and community's aspirations.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Vision for New Blockchain */}
+                  <div>
+                    <h3 className="text-2xl font-semibold text-white mb-6 text-center">Our Vision for the New Blockchain</h3>
+                    <div className="space-y-6">
+                      <div className="border-l-4 border-green-500 pl-6">
+                        <p className="text-gray-300 leading-relaxed">
+                          Implement a foundation-led governance model that ensures democratic and transparent decision-making.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-green-500 pl-6">
+                        <p className="text-gray-300 leading-relaxed">
+                          Prioritize energy efficiency to create a sustainable blockchain.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-green-500 pl-6">
+                        <p className="text-gray-300 leading-relaxed">
+                          Value and protect the contributions of all developers.
+                        </p>
+                      </div>
+                      <div className="border-l-4 border-green-500 pl-6">
+                        <p className="text-gray-300 leading-relaxed">
+                          Create an autonomous and fair project free from personal biases.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 text-center">
+                  <p className="text-lg text-gray-300 leading-relaxed italic">
+                    This new Blockchain is not only a continuation of Pactus but a reimagining of it with principles of justice, collaboration, and sustainability at its core.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
