@@ -373,19 +373,20 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="bg-gray-900/50 border border-gray-700 rounded-xl overflow-hidden">
+            <Link href="/announcement" className="bg-gray-900/50 border border-gray-700 rounded-xl overflow-hidden hover:border-green-500/50 transition-colors group">
               <div className="aspect-video bg-gradient-to-br from-green-600 to-blue-600 relative">
-                <Image src={bannerAnnouncement} alt="News 1" layout="fill" objectFit="cover" />
+                <Image src={bannerAnnouncement} alt="Official Announcement" layout="fill" objectFit="cover" />
               </div>
               <div className="p-6">
-                <h4 className="text-xl text-white mb-4">Official Announcement: Launch of the Pactus-Nexus Project</h4>
+                <h4 className="text-xl text-white mb-4 group-hover:text-green-400 transition-colors">Official Announcement: Launch of the Pactus Nexus Project</h4>
                 <p className="text-gray-300 leading-relaxed">
-                  We are thrilled to announce the launch of Pactus-Nexus, a
-                  groundbreaking blockchain initiative funded under the
-                  TrustChain Open Call #5.
+                  We are proud to announce the launch of Pactus Nexus, a transformative blockchain initiative selected through TrustChain Open Call #5.
                 </p>
+                <div className="mt-4 text-sm text-gray-400">
+                  August 12, 2025 • Read full announcement →
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
