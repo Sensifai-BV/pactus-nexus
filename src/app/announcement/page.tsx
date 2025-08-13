@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import shortLogo from "../../assets/short-logo.svg";
 export default function Announcement() {
   return (
     <div className="min-h-screen bg-[#0d0d1a]">
@@ -9,28 +9,7 @@ export default function Announcement() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="w-12 h-10">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 107 91">
-                <g id="Logogram">
-                  <path
-                    d="M57.3652 7.728L39.5522 79.316C38.1662 85.807 32.4322 90.446 25.7952 90.446H6.39522C2.32722 90.446 -0.705775 86.696 0.143225 82.718L17.9562 11.13C19.3422 4.639 25.0762 0 31.7132 0H51.1132C55.1812 0 58.2142 3.75 57.3652 7.728Z"
-                    fill="url(#paint0_linear_1_42)"
-                  />
-                  <path
-                    d="M106.804 4.071L99.4522 38.499C97.1532 49.266 87.6402 56.961 76.6302 56.961H60.9882C58.8452 56.961 57.2482 54.986 57.6952 52.891L65.0472 18.463C67.3462 7.696 76.8592 0 87.8692 0H103.511C105.654 0 107.251 1.975 106.804 4.071Z"
-                    fill="url(#paint1_linear_1_42)"
-                  />
-                </g>
-                <defs>
-                  <linearGradient id="paint0_linear_1_42" x1="-5.92807" x2="47.3202" y1="82.4089" y2="25.3161" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#84EC1B" />
-                    <stop offset="1" stopColor="#217A01" />
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_1_42" x1="57.1359" x2="95.6936" y1="55.4078" y2="14.0662" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#25EC1B" />
-                    <stop offset="1" stopColor="#1A9000" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              <Image src={shortLogo} alt="logo" />
             </Link>
           </div>
           <nav className="hidden md:flex space-x-8">
@@ -59,8 +38,14 @@ export default function Announcement() {
         <div className="container mx-auto px-4 max-w-4xl">
           {/* Back Button */}
           <div className="mb-8">
-            <Link href="/" className="inline-flex items-center text-green-500 hover:text-green-400 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
+            <Link href="/" className="inline-flex items-center bg-gradient-to-r from-[#8E1076] to-[#E82E5D] bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="url(#gradient)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#8E1076" />
+                    <stop offset="100%" stopColor="#E82E5D" />
+                  </linearGradient>
+                </defs>
                 <path d="M19 12H5" />
                 <path d="M12 19l-7-7 7-7" />
               </svg>
@@ -123,7 +108,7 @@ export default function Announcement() {
                 4. Democratic Infrastructure and Community Engagement
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                Pactus Nexus will maintain a fully democratic infrastructure, encompassing its website, tokens, social media, and community platforms. Every aspect of the project's ecosystem will be governed through open, participatory processes, enabling community members to shape its development. We are committed to building a vibrant, inclusive community that reflects the principles of decentralization and collaboration, ensuring Pactus Nexus remains a true public asset. We invite stakeholders to join us via <strong className="text-green-400">Pactusnexus.org</strong> to contribute to this transformative ecosystem.
+                Pactus Nexus will maintain a fully democratic infrastructure, encompassing its website, tokens, social media, and community platforms. Every aspect of the project's ecosystem will be governed through open, participatory processes, enabling community members to shape its development. We are committed to building a vibrant, inclusive community that reflects the principles of decentralization and collaboration, ensuring Pactus Nexus remains a true public asset. We invite stakeholders to join us via <strong className="bg-gradient-to-r from-[#8E1076] to-[#E82E5D] bg-clip-text text-transparent">Pactusnexus.org</strong> to contribute to this transformative ecosystem.
               </p>
             </section>
 
@@ -146,7 +131,7 @@ export default function Announcement() {
                 Pactus Nexus is a movement toward a sustainable, inclusive, and decentralized future. With the support of TrustChain Open Call #5, we are committed to delivering a modular, interoperable DLT solution over the next 9 months, integrating seamlessly with existing TrustChain frameworks and meeting the highest standards of energy efficiency, scalability, and regulatory compliance. Our team's expertise, supported by the majority of Pactus contributors (see Annex I) and Sensifai's independent research (see Annex II), ensures the project's success. We are grateful for TrustChain's rigorous and transparent selection process and are dedicated to exceeding expectations through innovation and collaboration.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                For more information about Pactus Nexus, including opportunities to collaborate, please visit our website at <strong className="text-green-400">Pactusnexus.org</strong> or contact us at [Insert Sensifai Contact Information]. Stay tuned for updates as we advance toward a transformative blockchain solution.
+                For more information about Pactus Nexus, including opportunities to collaborate, please visit our website at <strong className="bg-gradient-to-r from-[#8E1076] to-[#E82E5D] bg-clip-text text-transparent">Pactusnexus.org</strong> or contact us at [Insert Sensifai Contact Information]. Stay tuned for updates as we advance toward a transformative blockchain solution.
               </p>
             </section>
 
@@ -154,18 +139,18 @@ export default function Announcement() {
             <div className="text-center pt-8 border-t border-gray-700">
               <p className="text-lg text-gray-300 mb-2">Sincerely,</p>
               <p className="text-xl font-semibold text-white mb-1">The Pactus Nexus Team</p>
-              <p className="text-lg text-green-400">Sensifai</p>
+              <p className="text-lg bg-gradient-to-r from-[#8E1076] to-[#E82E5D] bg-clip-text text-transparent">Sensifai</p>
             </div>
           </article>
 
           {/* Call to Action */}
           <div className="mt-12 text-center">
-            <div className="bg-gradient-to-r from-green-600/20 to-blue-600/20 border border-green-500/30 rounded-xl p-8">
+            <div className="bg-gradient-to-r from-[#8E1076]/20 to-[#E82E5D]/20 border border-[#8E1076]/30 rounded-xl p-8">
               <h3 className="text-2xl font-bold text-white mb-4">Join the Revolution</h3>
               <p className="text-gray-300 mb-6">
                 Be part of the sustainable blockchain future with Pactus Nexus
               </p>
-              <button className="inline-flex items-center justify-center px-8 py-4 bg-green-500 text-white font-medium rounded-md hover:opacity-90 transition-opacity">
+              <button className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#8E1076] to-[#E82E5D] text-white font-medium rounded-md hover:opacity-90 transition-opacity">
                 Learn More
               </button>
             </div>

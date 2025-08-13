@@ -5,6 +5,7 @@ import nextGeneration from "../assets/next-generation.png";
 import ngiTrustchain from "../assets/ngi-trustchain.png";
 import startProject from "../assets/start-project.jpg";
 import bannerAnnouncement from "../assets/banner-announcement.jpg";
+import shortLogo from "../assets/short-logo.svg";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0d0d1a]">
@@ -13,28 +14,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
             <div className="w-12 h-10">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 107 91">
-                <g id="Logogram">
-                  <path
-                    d="M57.3652 7.728L39.5522 79.316C38.1662 85.807 32.4322 90.446 25.7952 90.446H6.39522C2.32722 90.446 -0.705775 86.696 0.143225 82.718L17.9562 11.13C19.3422 4.639 25.0762 0 31.7132 0H51.1132C55.1812 0 58.2142 3.75 57.3652 7.728Z"
-                    fill="url(#paint0_linear_1_42)"
-                  />
-                  <path
-                    d="M106.804 4.071L99.4522 38.499C97.1532 49.266 87.6402 56.961 76.6302 56.961H60.9882C58.8452 56.961 57.2482 54.986 57.6952 52.891L65.0472 18.463C67.3462 7.696 76.8592 0 87.8692 0H103.511C105.654 0 107.251 1.975 106.804 4.071Z"
-                    fill="url(#paint1_linear_1_42)"
-                  />
-                </g>
-                <defs>
-                  <linearGradient id="paint0_linear_1_42" x1="-5.92807" x2="47.3202" y1="82.4089" y2="25.3161" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#84EC1B" />
-                    <stop offset="1" stopColor="#217A01" />
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_1_42" x1="57.1359" x2="95.6936" y1="55.4078" y2="14.0662" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#25EC1B" />
-                    <stop offset="1" stopColor="#1A9000" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              <Image src={shortLogo} alt="logo" />
             </div>
           </div>
           <nav className="hidden md:flex space-x-8">
@@ -45,7 +25,7 @@ export default function Home() {
             <Link href="#roadmap" className="text-gray-300 hover:text-white transition-colors">Roadmap</Link>
             <Link href="#news" className="text-gray-300 hover:text-white transition-colors">News</Link>
           </nav>
-          <button className="hidden md:inline-flex items-center justify-center px-6 py-2 bg-green-500 text-white font-medium rounded-md hover:opacity-90 transition-opacity">
+          <button className="hidden md:inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-[#8E1076] to-[#E82E5D] text-white font-medium rounded-md hover:opacity-90 transition-opacity">
             Get Started
           </button>
           <button className="md:hidden text-white">
@@ -67,7 +47,7 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
             An open-source, energy-efficient, and scalable blockchain consensus solution
           </p>
-          <button className="inline-flex items-center justify-center px-8 py-4 text-lg bg-green-500 text-white font-medium rounded-md hover:opacity-90 transition-opacity mb-12">
+          <button className="inline-flex items-center justify-center px-8 py-4 text-lg bg-gradient-to-r from-[#8E1076] to-[#E82E5D] text-white font-medium rounded-md hover:opacity-90 transition-opacity mb-12">
             Visit TrustChain
           </button>
 
@@ -162,25 +142,25 @@ export default function Home() {
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#8E1076] to-[#E82E5D] rounded-full mt-3 flex-shrink-0"></div>
                     <p className="text-gray-300 leading-relaxed">
                       Implementing a foundation-led governance model that ensures democratic and transparent decision-making.
                     </p>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#8E1076] to-[#E82E5D] rounded-full mt-3 flex-shrink-0"></div>
                     <p className="text-gray-300 leading-relaxed">
                       Recognizing and valuing the contributions of all developers while safeguarding their rights and achievements.
                     </p>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#8E1076] to-[#E82E5D] rounded-full mt-3 flex-shrink-0"></div>
                     <p className="text-gray-300 leading-relaxed">
                       Prioritizing energy efficiency to align with global sustainability goals and Industry 5.0 principles.
                     </p>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#8E1076] to-[#E82E5D] rounded-full mt-3 flex-shrink-0"></div>
                     <p className="text-gray-300 leading-relaxed">
                       Creating an autonomous organization where decisions serve the best interests of the project and community, free from personal biases.
                     </p>
@@ -362,7 +342,7 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">Newsroom</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-900/50 border border-gray-700 rounded-xl overflow-hidden ">
-              <div className="aspect-video bg-gradient-to-br from-green-600 to-blue-600 relative">
+              <div className="aspect-video bg-gradient-to-br from-[#8E1076] to-[#E82E5D] relative">
                 <Image src={startProject} alt="News 1" layout="fill" objectFit="cover" />
               </div>
               <div className="p-6">
@@ -373,12 +353,12 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <Link href="/announcement" className="bg-gray-900/50 border border-gray-700 rounded-xl overflow-hidden hover:border-green-500/50 transition-colors group">
-              <div className="aspect-video bg-gradient-to-br from-green-600 to-blue-600 relative">
+            <Link href="/announcement" className="bg-gray-900/50 border border-gray-700 rounded-xl overflow-hidden hover:border-[#8E1076]/50 transition-colors group">
+              <div className="aspect-video bg-gradient-to-br from-[#8E1076] to-[#E82E5D] relative">
                 <Image src={bannerAnnouncement} alt="Official Announcement" layout="fill" objectFit="cover" />
               </div>
               <div className="p-6">
-                <h4 className="text-xl text-white mb-4 group-hover:text-green-400 transition-colors">Official Announcement: Launch of the Pactus Nexus Project</h4>
+                <h4 className="text-xl text-white mb-4 group-hover:bg-gradient-to-r group-hover:from-[#8E1076] group-hover:to-[#E82E5D] group-hover:bg-clip-text group-hover:text-transparent transition-colors">Official Announcement: Launch of the Pactus Nexus Project</h4>
                 <p className="text-gray-300 leading-relaxed">
                   We are proud to announce the launch of Pactus Nexus, a transformative blockchain initiative selected through TrustChain Open Call #5.
                 </p>
